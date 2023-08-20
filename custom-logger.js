@@ -3,7 +3,7 @@ const chalk = require("chalk");
 
 // Define custom colors using Chalk
 const customColors = {
-    info: "green",
+    info: "blue",
     warn: "yellow",
     error: "red",
     debug: "magenta",
@@ -15,24 +15,24 @@ const colorizer = winston.format.colorize({ colors: customColors });
 // Create a custom format that applies Chalk colors
 const customFormat = winston.format.printf(({ timestamp, level, message }) => {
     // Make color type string to match with level
-    const infoType = chalk.green("info") === level;
+    const infoType = chalk.blue("info") === level;
     const warnType = chalk.yellow("warn") === level;
     const errorType = chalk.red("error") === level;
 
     // Apply Chalk color based on log level
-    const infoColorTime = chalk.greenBright(`${timestamp}`);
+    const infoColorTime = chalk.blueBright(`${timestamp}`);
     const warnColorTime = chalk.yellowBright(`${timestamp}`);
     const errorColorTime = chalk.redBright(`${timestamp}`);
     const debugColorTime = chalk.magentaBright(`${timestamp}`);
 
     // Apply Chalk color on log
-    const infoColorValue = chalk.greenBright("INFO");
+    const infoColorValue = chalk.blueBright("INFO");
     const warnColorValue = chalk.yellowBright("WARN");
     const errorColorValue = chalk.redBright("ERROR");
     const debugColorValue = chalk.magentaBright("DEBUG");
 
     // Apply Chalk color based on log level
-    const infoColorMessage = chalk.greenBright(`${message}`);
+    const infoColorMessage = chalk.blueBright(`${message}`);
     const warnColorMessage = chalk.yellowBright(`${message}`);
     const errorColorMessage = chalk.redBright(`${message}`);
     const debugColorMessage = chalk.magentaBright(`${message}`);
