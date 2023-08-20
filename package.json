@@ -7,7 +7,7 @@
         "publish": "npm publish"
     },
     "keywords": [],
-    "author": "",
+    "author": "Md. Mehedi Hassan",
     "license": "ISC",
     "dependencies": {
         "chalk": "^5.3.0",
