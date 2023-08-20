@@ -1,7 +1,7 @@
 # winston-chalk
 
 [![npm version](https://badge.fury.io/js/winston-chalk.svg)](https://badge.fury.io/js/winston-chalk)
-[![GitHub license](https://img.shields.io/github/license/your-github-username/winston-chalk.svg)](https://github.com/your-github-username/winston-chalk/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/hassan-mehedi/winston-chalk.svg)](https://github.com/hassan-mehedi/winston-chalk/blob/main/LICENSE)
 
 **winston-chalk** is a custom logger module that combines the functionality of the [Winston](https://github.com/winstonjs/winston) logging library with the colorful text formatting of [Chalk](https://github.com/chalk/chalk). It allows you to log messages with different severity levels and adds colors to make your logs more visually appealing.
 
