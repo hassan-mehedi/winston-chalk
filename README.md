@@ -29,13 +29,14 @@ const logger = require("winston-chalk");
 logger.info("This is an info message.");
 logger.warn("This is a warning message.");
 logger.error("This is an error message.");
+logger.debug("This is an error message.");
 ```
 
+## Output
+
+![alt text](./assets/winston-chalk.png)
+
 By default, **winston-chalk** will colorize log messages based on their severity level (info: blue, warn: yellow, error: red) to make it easier to distinguish between different types of messages.
-
-## Customization
-
-You can customize the colors and formatting of log messages by modifying the Chalk colorizer and custom formatting in the `custom-logger.js` file.
 
 ## License
 

@@ -19,19 +19,19 @@ const customFormat = winston.format.printf(({ timestamp, level, message }) => {
     const warnType = chalk.yellow("warn") === level;
     const errorType = chalk.red("error") === level;
 
-    // Apply Chalk color based on log level
-    const infoColorTime = chalk.blueBright(`${timestamp}`);
-    const warnColorTime = chalk.yellowBright(`${timestamp}`);
-    const errorColorTime = chalk.redBright(`${timestamp}`);
-    const debugColorTime = chalk.magentaBright(`${timestamp}`);
+    // Apply Chalk color on the timestamp
+    const infoColorTime = `${chalk.blueBright.bold(`${timestamp}`)} ${chalk.bold("-")}`;
+    const warnColorTime = `${chalk.yellowBright.bold(`${timestamp}`)} ${chalk.bold("-")}`;
+    const errorColorTime = `${chalk.redBright.bold(`${timestamp}`)} ${chalk.bold("-")}`;
+    const debugColorTime = `${chalk.magentaBright.bold(`${timestamp}`)} ${chalk.bold("-")}`;
 
-    // Apply Chalk color on log
-    const infoColorValue = chalk.blueBright("INFO");
-    const warnColorValue = chalk.yellowBright("WARN");
-    const errorColorValue = chalk.redBright("ERROR");
-    const debugColorValue = chalk.magentaBright("DEBUG");
+    // Apply Chalk color on the log level
+    const infoColorValue = chalk.blueBright.bold("INFO");
+    const warnColorValue = chalk.yellowBright.bold("WARN");
+    const errorColorValue = chalk.redBright.bold("ERROR");
+    const debugColorValue = chalk.magentaBright.bold("DEBUG");
 
-    // Apply Chalk color based on log level
+    // Apply Chalk color based on the message
     const infoColorMessage = chalk.blueBright(`${message}`);
     const warnColorMessage = chalk.yellowBright(`${message}`);
     const errorColorMessage = chalk.redBright(`${message}`);
@@ -46,7 +46,7 @@ const customFormat = winston.format.printf(({ timestamp, level, message }) => {
     // Add message color
     const coloredMessage = infoType ? infoColorMessage : warnType ? warnColorMessage : errorType ? errorColorMessage : debugColorMessage;
 
-    return `» [${coloredTimestamp} − ${coloredLevel}] − ${coloredMessage}`;
+    return `» ${coloredTimestamp} ${coloredLevel} − ${coloredMessage}`;
 });
 
 // Create the Winston logger

@@ -6,7 +6,12 @@
     "scripts": {
         "publish": "npm publish"
     },
-    "keywords": [],
+    "keywords": [
+        "Logger",
+        "Console",
+        "Winston",
+        "Chalk"
+    ],
     "author": "Md. Mehedi Hassan",
     "license": "MIT",
     "dependencies": {
