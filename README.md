@@ -42,13 +42,9 @@ By default, **winston-chalk** will colorize log messages based on their severity
 
 This package is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## Contributing
-
-If you'd like to contribute to this project, please follow the [Contributing Guidelines](CONTRIBUTING.md).
-
 ## Issues
 
-If you encounter any issues or have questions about this package, please feel free to [open an issue](https://github.com/your-github-username/winston-chalk/issues) on GitHub.
+If you encounter any issues or have questions about this package, please feel free to [open an issue](https://github.com/hassan-mehedi/winston-chalk/issues) on GitHub.
 
 ## Author
 
