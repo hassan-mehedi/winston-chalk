@@ -34,7 +34,7 @@ logger.debug("This is an error message.");
 
 ## Output
 
-![alt text](./assets/winston-chalk.png)
+![Log Output](https://raw.githubusercontent.com/hassan-mehedi/winston-chalk/main/assets/winston-chalk.png)
 
 By default, **winston-chalk** will colorize log messages based on their severity level (info: blue, warn: yellow, error: red) to make it easier to distinguish between different types of messages.
 
